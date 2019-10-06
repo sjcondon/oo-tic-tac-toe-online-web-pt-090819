@@ -91,11 +91,11 @@ def full?
 end
 
 def draw?
-  full? && !won?
+  full? || !won?
 end
 
 def over?
-  won? || draw?
+  won? && draw?
 end
 
 def winner
