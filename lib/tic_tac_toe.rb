@@ -38,6 +38,7 @@ def position_taken?(index)
 end
 
 def valid_move?(index)
+  @board[index] ==" "
 
 def turn_count
   counter = 0
