@@ -87,11 +87,11 @@ def won?
 end
 
 def full?
-  !turn_count == 0
+  turn_count == 9
 end
 
 def draw?
-  full? || !won?
+  full? && !won?
 end
 
 def over?
@@ -99,9 +99,9 @@ def over?
 end
 
 def winner
-  # won? @board[won?[0]] : nil
-  if player = won?
-    @board[player[0]]
+  won? ? @board[won?[0]] : nil
+  # if player = won?
+  #   @board[player[0]]
 end
 end
 
