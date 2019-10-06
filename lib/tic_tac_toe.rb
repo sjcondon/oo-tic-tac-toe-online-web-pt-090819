@@ -37,7 +37,7 @@ def position_taken?(index)
   
 end
 
-def valid_move?
+def valid_move?(index)
 
 def turn_count
   counter = 0
