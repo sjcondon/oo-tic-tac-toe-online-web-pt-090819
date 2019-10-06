@@ -39,6 +39,7 @@ end
 
 def valid_move?(index)
   @board[index] ==" "
+end
 
 def turn_count
   counter = 0
