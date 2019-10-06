@@ -55,3 +55,4 @@ def current_player
     "O"
   end
 end
+end
