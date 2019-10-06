@@ -75,7 +75,7 @@ def won?
   winner = nil
   
   WIN_COMBINATIONS.each do |combo|
-    if combo.all? {|win| @board{win} =="X"}
+    if combo.all? {|win| @board[win] =="X"}
       winner = combo
     elseif combo.all? {|win| @board{win} === "O"}
       winner = combo
