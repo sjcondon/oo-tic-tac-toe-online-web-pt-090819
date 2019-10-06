@@ -87,7 +87,7 @@ def won?
 end
 
 def full?
-  turn_count == 0
+  !turn_count == 0
 end
 
 def draw?
