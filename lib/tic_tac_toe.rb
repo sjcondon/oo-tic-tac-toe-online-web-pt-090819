@@ -93,6 +93,17 @@ def full?
   turn_count == 0
 end
 
+def draw?
+  full? && !won?
+end
+
+def over?
+  won? || draw?
+end
+
+def winner
+  # won? @board[won?[0]] : nil
+end
 
 
 
