@@ -74,19 +74,19 @@ def turn
   end
 end
 
-# def won?
-#   winner = nil
+def won?
+  winner = nil
   
-#   WIN_COMBINATIONS.each do |combo|
-#     if combo.all? {|win| @board[win] =="X"}
-#       winner = combo
-#     elseif combo.all? {|win| @board[win] === "O"}
-#       winner = combo
-#     else
-#       winner
-#     end
-#   end
-#   winner
-# end
+  WIN_COMBINATIONS.each do |combo|
+    if combo.all? {|win| @board[win] =="X"}
+      winner = combo
+    elseif combo.all? {|win| @board[win] === "O"}
+      winner = combo
+    else
+      winner
+    end
+  end
+  winner
+end
 
 end
