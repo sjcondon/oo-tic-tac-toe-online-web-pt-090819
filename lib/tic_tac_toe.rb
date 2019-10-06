@@ -33,11 +33,16 @@ def move(index,token ="X")
 end
 
 def position_taken?(index)
-  # @board[index] != " "
-  !position_taken?(index)
+  @board[index] != " "
+  
 end
 
-# def valid_move?(index)
-#   !position_taken?(index)
-# end
+def turn_count
+  counter = 0
+  @board.each do |q|
+    if q == "X" || q =="O"
+      counter += 1
+  end
+end
+counter
 end
