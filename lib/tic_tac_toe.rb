@@ -103,8 +103,17 @@ end
 
 def winner
   # won? @board[won?[0]] : nil
+  if player = won?
+    @board[player[0]]
+end
 end
 
-
+def player
+  turn until over?
+  if winner
+    puts "Congratulations #{winner}!"
+  else
+    puts "Cat's Game!"
+end
 
 end
